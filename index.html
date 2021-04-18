@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Rubik+Mono+One&family=Roboto:wght@900&family=Noto+Sans+JP:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.min.css" rel="stylesheet">
+    <title>나무</title>
+  </head>
+  <body>
+
+    <!--
+
+      Hello friend, welcome to the source code, nothing to see here really.
+      This is just a simple page.
+      
+      If you are seeing this, you are probably really early :)
+      Thank you for your interest
+      Please come back later, we will have cool stuff for you.
+
+    -->
+    <div class="grid">
+
+      <div class="grid-cell"></div>
+
+      <div class="grid-cell">
+        <div id="hangul"><!--
+        --><div id="na">나</div><!--
+        --><div id="mu">무</div><!--
+    --></div>
+
+        <div id="url">
+          <grid class="domainName-grid">
+            <div class="numberUp numberLeft"><span class="charLeft">E</span><span class="charRight">5</span></div>
+            <div class="numberUp numberRight"><span class="charLeft">7</span><span class="charRight">3</span></div>
+            <div class="numberDown numberLeft"><span class="charLeft">B</span><span class="charRight">4</span></div>
+            <div class="numberDown numberRight"><span class="charLeft">0</span><span class="charRight">1</span></div>
+          </grid>
+        </div>
+
+      </div>
+
+      <div id="urlext" class="grid-cell">.NET</div>
+
+      <div class="grid-cell"></div>
+
+    </div>
+
+<script>
+  const hangul = document.getElementById("hangul");
+  const url = document.getElementById("url");
+  function swapHangulUrl() {
+    let toggle = true;
+    setInterval( () => {
+      if ( toggle ) {
+        hangul.style.display = "none";
+        url.style.display = "block";
+      } else {
+        hangul.style.display = "block";
+        url.style.display = "none";
+      }
+      toggle = !toggle;
+    }, 7000);
+  }
+  swapHangulUrl();
+</script>
+
+  </body>
+</html>
